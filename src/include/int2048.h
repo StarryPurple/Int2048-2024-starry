@@ -21,12 +21,12 @@ namespace sjtu {
   // 采用 BASE = 10000 进制
 class int2048 {
 
-  static constexpr int INT2048_BASE = 10000;
+  static constexpr int INT2048_BASE = 1000;
   // static constexpr int INT2048_MAX_DIGIT = 1000000;
   static constexpr double PI = 3.14159265358979324;
   static constexpr int INT2048_MAX_DIGIT_POWER = 20;
   static constexpr int INT2048_MAX_DIGIT = 1 << (INT2048_MAX_DIGIT_POWER + 1);
-  static int FFT_NTT_rev[INT2048_MAX_DIGIT];
+  static int FFT_NTT_rev[INT2048_MAX_DIGIT + 1];
   static constexpr long long mod1 = 469762049, mod2 = 167772161, g_mod = 3,
   inv1 = 130489458, inv2 = 104391568;
 
